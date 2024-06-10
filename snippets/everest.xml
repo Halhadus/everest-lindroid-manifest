@@ -43,6 +43,9 @@
   <project path="device/everest/sepolicy" name="device_everest_sepolicy" remote="everest" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="everest"  />
 
+  <!-- External -->
+  <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="everest" />
+
   <!-- Fading Layout -->
   <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="everest" />
 
