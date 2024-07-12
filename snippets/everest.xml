@@ -51,7 +51,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="everest" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" revision="wow" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="everest" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="everest" />
 
@@ -92,13 +92,14 @@
   </project>
 
   <!-- Packages -->
-  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="everest" />
+  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="everest" revision="wow" />
   <project path="packages/apps/EverestWallpaperStub" name="packages_apps_EverestWallpaperStub" remote="everest" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
   <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
+  <project path="packages/apps/Pif" name="packages_apps_Pif" remote="everest" />
   <project path="packages/apps/PocketMode" name="packages_apps_PocketMode" remote="everest" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" revision="wow" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="everest" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="everest" />
@@ -111,10 +112,9 @@
   <project path="system/core" name="system_core" groups="pdk" remote="everest" />
 
   <!-- Vendor -->
-  <project path="vendor/certification" name="vendor_certification" remote="everest-gitlab" />
-  <project path="vendor/everest" name="vendor_everest" remote="everest" />
+  <project path="vendor/certification" name="vendor_certification" remote="everest" />
+  <project path="vendor/everest" name="vendor_everest" remote="everest" revision="wow" />
   <project path="vendor/lawnchair" name="vendor_lawnchair" remote="everest" />
-  <project path="vendor/PixelPropsUtils" name="vendor_PixelPropsUtils" remote="everest" />
   <project path="vendor/gms" name="vendor_gms" remote="everest-gitea" clone-depth="1" />
   <project path="vendor/support" name="vendor_support" remote="everest" />
 </manifest>
