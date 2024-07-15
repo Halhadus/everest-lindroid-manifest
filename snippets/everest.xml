@@ -21,7 +21,7 @@
            revision="qpr3" />
 
   <!-- Rootdir -->
-  <project path="Halhadus/everest-lindroid-manifest" name="manifest" remote="github" revision="qpr3" />
+  <project path="manifest" name="Halhadus/everest-lindroid-manifest" remote="github" revision="qpr3" />
   <project path="everest-maintainers" name="everest-maintainers" remote="everest" />
 
   <!-- Bootable -->
