@@ -6,7 +6,7 @@ Prior to building, you will need basic knowledge of [Git](https://www.atlassian.
 
 ### Requirements
 - Around 350GB Disk Space.
-- A computer with at least 32GB RAM running Linux (recommended) or MacOS.
+- A computer with at least 32GB RAM (or 16 GB RAM + 48 GB swap, needed good SSD) running Linux (recommended) or MacOS.
 - Build environment [setup](https://github.com/akhilnarang/scripts).
 
 # Getting Started
@@ -14,7 +14,7 @@ Prior to building, you will need basic knowledge of [Git](https://www.atlassian.
 ### Initialize local repository
 
 ```
-repo init -u https://github.com/ProjectEverest/manifest -b qpr3 --git-lfs
+repo init -u https://github.com/Halhadus/everest-lindroid-manifest -b qpr3 --git-lfs
 ```
 
 ### Sync up 
@@ -60,12 +60,11 @@ TARGET_INCLUDE_PIXEL_LAUNCHER := false
 
 ```
 . build/envsetup.sh
-```
-```
-lunch everest_<devicecodename>-user
-```
-```
-make bacon -j$(nproc --all)
+export USE_CCACHE=1
+ccache -M 50G
+croot
+breakfast lineage_marble-userdebug
+brunch lineage_marble-userdebug | tee log.txt
 ```
 
 ### Compilation Help
