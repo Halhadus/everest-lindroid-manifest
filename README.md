@@ -63,8 +63,8 @@ TARGET_INCLUDE_PIXEL_LAUNCHER := false
 export USE_CCACHE=1
 ccache -M 50G
 croot
-lunch everest_marble-userdebug
-mka bacon everest_marble-userdebug -j12 | tee log.txt
+breakfast everest_marble-userdebug
+mka bacon -j12 | tee log.txt
 ```
 
 ### Compilation Help
